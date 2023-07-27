@@ -1,7 +1,7 @@
-function etchAsketch() {
-  console.log("HELLODARKNESS");
-  document.getElementById("draw").style.backgroundColor = "black";
-}
+// function etchAsketch() {
+//   console.log("HELLODARKNESS");
+//   document.getElementById("draw").style.backgroundColor = "black";
+// }
 
 function gridGenerator(e) {
   console.log("hello world1");
@@ -22,7 +22,9 @@ function gridGenerator(e) {
         `style`,
         `width: calc(600px/${edge}); height: calc(600px/${edge})`
       );
-      box.addEventListener("mouseover", etchAsketch);
+      box.addEventListener("mouseover", function () {
+        box.style.backgroundColor = "black";
+      });
 
       // box.addEventListener("mouseover", (e) => {
       //   etchAsketch;
