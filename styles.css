@@ -5,14 +5,55 @@
 }
 
 .box {
-  border: 1px solid black;
+  border: 0.3px solid black;
 }
 
-.container {
+.grid {
   display: flex;
   width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .draw {
   background-color: black;
+}
+
+.heading {
+  font-family: "Edu SA Beginner", cursive;
+  text-align: center;
+  font-size: 80px;
+
+  background-image: linear-gradient(
+    to left,
+    violet,
+    indigo,
+    green,
+    blue,
+    yellow,
+    orange,
+    red
+  );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.footer-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+}
+.generator {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  width: 100%;
 }

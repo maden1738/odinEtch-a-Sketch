@@ -4,16 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
-    <h1>Etch-a-Sketch</h1>
-    <button onclick="gridGenerator(event)">generate</button>
-    <section id="gridHere"></section>
-    <script src="designs.js">
+    <h1 class="heading">Etch-a-Sketch</h1>
+    <div class="generator">
+      <button onclick="gridGenerator(event)" class="btn btn-info">
+        Generate
+      </button>
+    </div>
 
+    <div id="gridHere" class="main"></div>
+    <div class="footer-buttons">
+      <button class="btn btn-success">Erase</button>
+      <button class="btn btn-dark">Black</button>
+    </div>
 
-      // document.getElementById("ho").addEventListener("onmouseout",etchAsketch());
-    </script>
+    <script src="designs.js"></script>
   </body>
 </html>
